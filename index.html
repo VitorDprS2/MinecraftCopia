@@ -1,25 +1,28 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Minecraft Clone JS</title>
-    <link rel="stylesheet" href="style.css">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Central de Jogos</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <div id="reticlo"></div>
+  <header>
+    <h1>🎮 Portal de Jogos</h1>
+  </header>
 
-    <div id="instrucoes">
-        <strong>Controles:</strong><br>
-        Clique na tela para jogar<br>
-        W, A, S, D - Mover<br>
-        Espaço - Pular<br>
-        Clique Esquerdo - Quebrar<br>
-        Clique Direito - Colocar
+  <main>
+    <div class="grid" id="game-grid"></div>
+  </main>
+
+  <div class="modal" id="game-modal">
+    <div class="modal-content">
+      <span class="close-btn" onclick="closeGame()">&times;</span>
+      <iframe id="game-iframe" src=""></iframe>
     </div>
+  </div>
 
-    <script src="script.js"></script>
+  <script src="script.js"></script>
 </body>
 </html>
